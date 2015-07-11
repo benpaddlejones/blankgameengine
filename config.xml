@@ -25,7 +25,7 @@
 		</gap:config-file>
 
 		<gap:splash src="images/splashscene.png" gap:platform="android" />
-		<icon src="icon.png" />
+		<icon src="images/icon.png" />
 		<preference name="android-minSdkVersion" value="13" />
 		<preference name="android-targetSdkVersion" value="19" />
 		<preference name="orientation"  value="landscape" /> 
