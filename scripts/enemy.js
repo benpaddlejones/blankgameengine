@@ -24,7 +24,7 @@ Quintus.ActionPlatformerEnemy = function(Q) {
 	  added: function() {
 	    var entity = this.entity;
 	    entity.on("bump.left,bump.right,bump.bottom,bump.top",function(collision) {
-	        if (collision.obj.isA("Player") && tokenCount == levelTokenGoal) {
+	        if (collision.obj.isA("Player") ) {
 	        gameLevel++;
 			collision.obj.damage();
 			Q.stageScene("hud",3); 
@@ -32,23 +32,7 @@ Quintus.ActionPlatformerEnemy = function(Q) {
 	    });
 	  }	    
 	});
-	
-	
-	
-	Q.component("waterDrown", {
-	  added: function() {
-	    var entity = this.entity;
-	    entity.on("bump.left,bump.right,bump.bottom,bump.top",function(collision) {
-	      if(collision.obj.isA("Player")) {                        
-	        playerDeath ++;
-			Q.audio.play('waterdeath.mp3');
-			collision.obj.damage();
-			Q.stageScene("hud",3); 
-	      }
-	    });
-	  }	    
-	});
-	
+		
 		
 	Q.component("commonEnemy", {
 	  added: function() {

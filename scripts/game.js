@@ -2,9 +2,8 @@ var gameLevel = 0;
 var enemyKill = 0;
 var playerDeath = 0;
 var tokenCount = 0;
-var levelTokenGoal = 0;
 var totalTokenCount = 0;
-var maxLevels = 3; // total levels + 1
+var maxLevels = 2; // total levels + 1
 
 
 
@@ -57,15 +56,8 @@ window.addEventListener("load",function() {
 		 case 1:
 		  	Q.stageTMX("level1.tmx",stage); 
 		  	player = Q("Player").first();
-		  	levelTokenGoal = 5;
 		  	break;
-		case 2:
-			Q.stageTMX("level2.tmx",stage); 
-			player = Q("Player").first();
-			levelTokenGoal = 2;
-			break;
 		default:
-			// Q.stageTMX("level1.tmx",stage); 
 			Q.audio.play('gameover.mp3', { loop: true });
 			Q.stageTMX("level1.tmx", stage);
 			Q.stageScene("hud", 3);
@@ -119,7 +111,7 @@ window.addEventListener("load",function() {
 	
 
     //load assets
-    Q.loadTMX("level1.tmx, level2.tmx, sprites.json, sprites.png, commondeath.mp3, gameover.mp3, openingtitle.mp3, waterdeath.mp3, jump.mp3, coin.mp3", function() {       
+    Q.loadTMX("level1.tmx, sprites.json, sprites.png, commondeath.mp3, gameover.mp3, openingtitle.mp3, jump.mp3, coin.mp3", function() {       
       Q.compileSheets("sprites.png","sprites.json");     
       Q.stageScene("level");
 	  Q.stageScene("hud", 3);
