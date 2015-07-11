@@ -5,6 +5,8 @@ var tokenCount = 0;
 var totalTokenCount = 0;
 var maxLevels = 2; // total levels + 1
 
+document.getElementById("body").style.backgroundColor = newBackgroundColor;
+document.getElementById("newTitle").innerHTML = titleText;
 
 
 window.addEventListener("load",function() {
@@ -98,8 +100,8 @@ window.addEventListener("load",function() {
 	
 	Q.scene("hud", function (stage) {
 	  stage.insert(new Q.UI.Text({
-	      label: "Pwned: " + playerDeath + "\nCups of coffee: " + totalTokenCount + "\nPet hamsters killed: " + enemyKill,
-      color: "white",
+	      label: "Deaths: " + playerDeath + "\n" + tokenName + ": " + totalTokenCount + "\n" + enemyName + ": " + enemyKill,
+      color: hudColour,
       align: 'left',
 	  size: 10,
       x: 10,
