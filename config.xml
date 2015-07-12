@@ -26,12 +26,10 @@
  	<preference name="SplashMaintainAspectRatio" value="true" /> 
  	 
  	<platform name="android"> 
-		<splash src="images/splash.png" density="hdpi"/> 
- 		<splash src="images/splash.png" density="ldpi"/> 
- 		<splash src="images/splash.png" density="mdpi"/> 
- 		<splash src="images/splash.png" density="xhdpi"/> 
- 		<splash src="images/splash.png" density="xxhdpi"/> 
- 		<splash src="images/splash.png" density="xxxhdpi"/>	 
+		<splash src="res/screen/android/splash.png" density="land-hdpi"/>
+		<splash src="res/screen/android/splash.png" density="land-ldpi"/>
+		<splash src="res/screen/android/splash.png" density="land-mdpi"/>
+		<splash src="res/screen/android/splash.png" density="land-xhdpi"/> 
  		<preference name="android-minSdkVersion" value="13"/> 
  		<preference name="android-targetSdkVersion" value="22"/> 
  		<preference name="SetFullscreen" value="true"/> 
@@ -41,6 +39,7 @@
     </platform> 
 
 		<icon src="images/icon.png" />
+		<gap:splash src="images/splash.png" gap:platform="android" />
 		
         <!-- iOS SECTION -->
         <gap:platform name="ios" />
