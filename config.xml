@@ -21,13 +21,13 @@
         <gap:config-file platform="android" parent="/manifest/application" >
             <!-- Add Android extensions here. SEE: http://docs.build.phonegap.com/en_US/configuring_config_file_element.md.html#Config%20File%20Elements -->
 			<application android:debuggable="false" android:hardwareAccelerated="true" />
-			<activity android:screenOrientation="landscape" android:configChanges="orientation" android:hardwareAccelerated="false"/>
+			<activity android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen" android:screenOrientation="landscape" android:configChanges="orientation" android:hardwareAccelerated="false"/>
 		</gap:config-file>
 
-		<gap:splash src="images/splashscene.png" gap:platform="android" />
+		<!-- <gap:splash src="images/splashscene.png" gap:platform="android" />  -->
 		<icon src="images/icon.png" />
 		<preference name="android-minSdkVersion" value="13" />
-		<preference name="android-targetSdkVersion" value="19" />
+		<preference name="android-targetSdkVersion" value="22" />
 		<preference name="orientation"  value="landscape" /> 
 		
 		
