@@ -21,7 +21,16 @@
 			<activity android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen" android:screenOrientation="landscape" android:configChanges="orientation" />
 		</gap:config-file>
 
-		<gap:splash src="images/splashscene.png" gap:platform="android" />
+		
+		<gap:splash src="images/splash.png" gap:platform="android" gap:qualifier="ldpi" />
+		<gap:splash src="images/splash.png" gap:platform="android" gap:qualifier="mdpi" />
+		<gap:splash src="images/splash.png" gap:platform="android" gap:qualifier="hdpi" />
+		<gap:splash src="images/splash.png" gap:platform="android" gap:qualifier="xhdpi" />
+		<gap:splash src="images/splash.png" gap:platform="android" gap:qualifier="fr-xhdpi" />
+		<gap:splash src="images/splash.png" gap:platform="android" gap:qualifier="port-xxhdpi" />
+		<gap:splash src="images/splash.png" gap:platform="android" gap:qualifier="land-xxhdpi" />
+		
+		
 		<icon src="images/icon.png" />
 		<preference name="android-minSdkVersion" value="13" />
 		<preference name="android-targetSdkVersion" value="22" />
