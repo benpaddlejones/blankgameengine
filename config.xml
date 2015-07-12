@@ -18,7 +18,7 @@
         <gap:platform name="android" />
         <gap:config-file platform="android" parent="/manifest/application" >
             <!-- Add Android extensions here. SEE: http://docs.build.phonegap.com/en_US/configuring_config_file_element.md.html#Config%20File%20Elements -->
-			<activity android:theme="@android:style/NoTitleBar.Fullscreen" android:screenOrientation="landscape" android:configChanges="orientation" />
+			<activity android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen" android:screenOrientation="landscape" android:configChanges="orientation" />
 		</gap:config-file>
 
 		<gap:splash src="images/splashscene.png" gap:platform="android" />
