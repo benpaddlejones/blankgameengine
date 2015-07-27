@@ -22,7 +22,7 @@
 		</gap:config-file>
 		
 	<preference name="SplashScreen" value="splash" /> 
- 	<preference name="SplashScreenDelay" value="4000" /> 
+ 	<preference name="SplashScreenDelay" value="4500" /> 
  	<preference name="SplashMaintainAspectRatio" value="true" /> 
  	 
  	<platform name="android"> 
