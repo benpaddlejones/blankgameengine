@@ -113,7 +113,8 @@ window.addEventListener("load",function() {
 	
 
     //load assets
-    Q.loadTMX("level1.tmx, sprites.json, sprites.png, commondeath.mp3, gameover.mp3, openingtitle.mp3, jump.mp3, coin.mp3", function() {       
+    // Q.loadTMX("level1.tmx, sprites.json, sprites.png, commondeath.mp3, gameover.mp3, openingtitle.mp3, jump.mp3, coin.mp3", function() {   Keep for if using intro and gameover music    
+	Q.loadTMX("level1.tmx, sprites.json, sprites.png, commondeath.mp3, jump.mp3, coin.mp3", function() {       
       Q.compileSheets("sprites.png","sprites.json");     
       Q.stageScene("level");
 	  Q.stageScene("hud", 3);
