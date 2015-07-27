@@ -53,14 +53,14 @@ window.addEventListener("load",function() {
 			}),container);
 	
 			container.fit(20,20);
-			Q.audio.play('openingtitle.mp3', { loop: true });
+		    // Q.audio.play('openingtitle.mp3', { loop: true }); Keep for if using intro and gameover music 
 			break;		
 		 case 1:
 		  	Q.stageTMX("level1.tmx",stage); 
 		  	player = Q("Player").first();
 		  	break;
 		default:
-			Q.audio.play('gameover.mp3', { loop: true });
+		    // Q.audio.play('gameover.mp3', { loop: true }); Keep for if using intro and gameover music 
 			Q.stageTMX("level1.tmx", stage);
 			Q.stageScene("hud", 3);
 
