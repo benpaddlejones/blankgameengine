@@ -90,7 +90,7 @@ Q.Sprite.extend("waterEnemy", {
 	
   Q.Sprite.extend("GroundEnemy", {
     init: function(p) {
-      this._super(p, {vx: -50, defaultDirection: "left"});
+        this._super(p, { vx: horiEnermySpeed, defaultDirection: "left" });
       this.add("2d, aiBounce, commonEnemy");
     },
     step: function(dt) {        
@@ -129,7 +129,7 @@ Q.Sprite.extend("waterEnemy", {
       
   Q.Sprite.extend("VerticalEnemy", {
     init: function(p) {
-      this._super(p, {vy: -100, rangeY: 40, gravity: 0 });
+        this._super(p, { vy: vertEnermySpeed, rangeY: vertEnermyHeight, gravity: 0 });
       this.add("2d, commonEnemy");
       
       this.p.initialY = this.p.y;
